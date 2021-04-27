@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Rodrigo Fernandes da Costa" />
+  <meta name="description" content="Rodrigo's web page with projects, programs, games, and design." />
+  <meta name="keywords"
+    content="Rodrigo Fernandes da Costa, Rodrigo Costa, Rodrigo F. da Costa, Rodrigo, Fernandes, Costa, rodrigorfc, rodrigofcosta, fcostarodrigo" />
+  <title>Rodrigo's Web Page</title>
+  <style>
+    @keyframes card {
+      from {
+        opacity: 0;
+        transform: translateX(100%)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #c6c6c6
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: min-content min-content auto;
+      grid-template-areas: "header header""menu breadcrumb""menu main"
+    }
+
+    h1 {
+      grid-area: header;
+      margin: 0;
+      padding: 1rem;
+      color: #fff;
+      text-shadow: 2px 2px 2px #000;
+      background: #2d914b;
+      text-align: center
+    }
+
+    .menu {
+      grid-area: menu;
+      background: #304032
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #000;
+      padding: 1.1rem 1.4rem;
+      display: block;
+      transition: background-color .3s
+    }
+
+    .menu a:hover {
+      background-color: rgba(0, 0, 0, .25)
+    }
+
+    .breadcrumb {
+      grid-area: breadcrumb;
+      background: #49714e
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #000;
+      padding: 1.1rem 1.4rem;
+      display: inline-block;
+      transition: background-color .3s
+    }
+
+    .breadcrumb a:hover {
+      background-color: rgba(0, 0, 0, .25)
+    }
+
+    main {
+      grid-area: main
+    }
+
+    .card {
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 5px;
+      color: #000;
+      background: #f5f5f5;
+      animation: card .6s
+    }
+
+    .card>h2:first-child {
+      margin-top: 0
+    }
+
+    .card:nth-child(1) {
+      animation: card .3s
+    }
+
+    .card:nth-child(2) {
+      animation: card .4s
+    }
+
+    .card:nth-child(3) {
+      animation: card .5s
+    }
+
+    pre {
+      background: #fff;
+      border: 1px solid #cecece;
+      border-radius: 4px;
+      padding: 1rem
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Rodrigo's Web Page</h1>
+  <div class="breadcrumb"><a href>Home</a><a href>Programming</a></div>
+  <div class="menu"><a href>Downloads</a><a href>Wallpapers</a><a href>Games</a><a href>Programming</a></div>
+  <main>
+    <div class="card">
+      <h2>Page redesign4</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt ad esse nesciunt, ullam tempora
+        blanditiis illo ut eligendi at porro placeat iure numquam vel, atque distinctio sapiente dicta harum?</p>
+    </div>
+    <div class="card">
+      <h2>Page redesign</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt ad esse nesciunt, ullam tempora
+        blanditiis illo ut eligendi at porro placeat iure numquam vel, atque distinctio sapiente dicta harum?</p>
+    </div>
+    <div class="card">
+      <h2>Page redesign</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt ad esse nesciunt, ullam tempora
+        blanditiis illo ut eligendi at porro placeat iure numquam vel, atque distinctio sapiente dicta harum?</p>
+    </div>
+    <div class="card">
+      <h2>Page redesign</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt ad esse nesciunt, ullam tempora
+        blanditiis illo ut eligendi at porro placeat iure numquam vel, atque distinctio sapiente dicta harum?</p>
+    </div>
+    <div class="card">
+      <h2>Page redesign</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt ad esse nesciunt, ullam tempora
+        blanditiis illo ut eligendi at porro placeat iure numquam vel, atque distinctio sapiente dicta harum?</p>
+    </div>
+  </main>
+</body>
+
+</html>
